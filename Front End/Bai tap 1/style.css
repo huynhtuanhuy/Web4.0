@@ -13,7 +13,7 @@ span {
   line-height: 30px;
 }
 
-.menu_vertical, .menu span:hover {
+.menu span:hover {
   background-color: #9CD08F;
   color: #FFFFFF;
 }
