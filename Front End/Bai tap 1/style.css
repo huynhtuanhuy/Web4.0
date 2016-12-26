@@ -4,26 +4,38 @@
   margin-bottom: 10px;
 }
 
-span {
+.menu span {
   color: #402E2A;
   font-weight: bold;
   display: inline-block;
   width: 100px;
-  height: 30px;
   line-height: 30px;
+  position: relative;
 }
 
-.menu span:hover {
+.menu span:hover,
+.menu .submenu span:hover {
   background-color: #9CD08F;
   color: #FFFFFF;
+  cursor: pointer;
 }
 
-.menu_vertical {
-  background-color: inherit;
-}
-
-.menu_vertical span {
+.menu .submenu {
+  display: none;
+  position: absolute;
   background-color: #D5B0AC;
+}
+
+.submenu .submenu{
+  display: none;
+  position: absolute;
+  left: 100%
+}
+
+.menu span:hover >.submenu {
   display: block;
-  margin: 1px
+}
+
+.submenu span:hover >.submenu{
+  display: inline-block;
 }
