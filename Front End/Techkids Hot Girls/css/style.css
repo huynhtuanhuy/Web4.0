@@ -1,0 +1,205 @@
+body {
+  background-color: #dfdfdf;
+}
+
+.header {
+  padding: 16px 0 13px;
+  background-color: #ffffff;
+}
+
+.header input[type=text]{
+  border-radius: 0;
+  padding-right: 35px;
+}
+
+.search_form .glyphicon-search{
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translate(0, -50%);
+  color: #cecece
+}
+
+.site_logo{
+  line-height: 34px;
+  font-size: 24px;
+  color: #00a0c6;
+  font-weight: lighter;
+}
+
+.site_logo img{
+  height: 30px;
+}
+
+.profile_wrapper{
+  height: 34px;
+  border: 1px solid #cecece;
+}
+
+.profile_wrapper button{
+  float: left;
+  display: inline-block;
+  width: 33px;
+  height: 33px;
+  line-height: 34px;
+  text-align: center;
+  color: #cecece;
+  border: 0 none;
+  background: transparent;
+  border-right: 1px solid #cecece;
+}
+
+.profile_wrapper button:hover{
+  background-color: #00a0c6;
+  color: #ffffff;
+}
+
+.header .username{
+  padding-left: 15px;
+  color: #cecece;
+  line-height: 34px
+}
+
+.content .container{
+  margin-top: 20px;
+}
+
+.holder{
+  background-color: #ffffff;
+  position: relative;
+}
+
+.holder .img{
+  overflow: hidden;
+  max-height: 300px;
+  position: relative;
+}
+
+.img img{
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.overlay{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 15px;
+}
+
+.img:hover .overlay{
+  opacity: 1;
+}
+
+.overlay .btn-plus{
+  border-radius: 0;
+  border-color: transparent;
+  width: 36px;
+  height: 36px;
+  background-color: #ffffff;
+}
+
+.overlay .btn-plus >.glyphicon-plus{
+  align-self: center;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  margin: 15px 0 0 15px;
+  padding: 8px 8px 8px 9px;
+  width: 36px;
+  height: 36px;
+  font-size: 20px;
+  color: #000000;
+  opacity: 0.8;
+}
+
+.overlay >.row{
+  width: 100%;
+  height: 100%;
+}
+
+.overlay .info{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.info .col-sm-4{
+  bottom: 0;
+  position: relative;
+  padding: 0;
+  color: #ffffff;
+  font-size: 15px;
+  margin-top: 90%;
+}
+
+.info .glyphicon-eye-open{
+  margin-bottom: 5px;
+  font-size: 25px;
+  display: block;
+  font-weight: lighter;
+}
+
+.info .glyphicon-time{
+  margin-bottom: 5px;
+  font-size: 25px;
+  display: block;
+  font-weight: lighter;
+}
+
+.info .glyphicon-plus{
+  margin-bottom: 5px;
+  font-size: 25px;
+  display: block;
+  font-weight: lighter;
+}
+
+.content .username-holder{
+  padding: 15px;
+}
+
+.username-holder .img{
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: #464646;
+  display: inline-block;
+  float: left;
+}
+
+.content .username-holder >.username{
+  padding: 0;
+  display: inline-block;
+  padding-left: 25px;
+}
+
+.content .username-holder .username .username{
+  display: block;
+  font-weight: bold;
+  font-size: 18px;
+  color: #2e2e2e;
+}
+
+.content .username-holder .username .description{
+  display: block;
+  color: #8a8a8a;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.holder .caption{
+  padding: 0 15px 15px 15px;
+  font-weight: bold;
+  color: #2f2f2f;
+}
